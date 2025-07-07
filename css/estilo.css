@@ -24,7 +24,6 @@ html {
 body {
     background: var(--background);
     font-family: Bebas Neue, sans-serif;
-    overflow: hidden;
 }
 
 header {
@@ -62,13 +61,13 @@ div#lado1 {
 
 div#lado1 h1{
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-decoration-line: underline;
 }
 
 div#lado1 h3 {
     color: var(--black);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 div#lado1 p {
@@ -106,7 +105,7 @@ div#lado2 {
 }
 
 div#lado2 img {
-    width: 100%;
+    width: 400px;
     border-radius: 50%;
     padding: 5%;
 }
@@ -124,12 +123,12 @@ section#sobre h1{
     margin-top: 50px;
     color: var(--white);
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 
 section#sobre #text-sobre-mim{
-    font-size: 1.5rem;
-    margin: 40px;
+    font-size: 2rem;
+    margin: 50px 70px 50px 70px;
     text-align: center;
     color: var(--white);
 }
@@ -157,7 +156,7 @@ p#subtitulo_sobre{
 }
 
 section#sobre img {
-    width: 350px;
+    width: 250px;
     border-radius: 20px;
 }
 
@@ -168,6 +167,12 @@ div#div_video {
     align-items: center;
     margin: 40px;
 }
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
 
 section#contato{
     padding: 150px 0px 0px 0px;
@@ -250,20 +255,32 @@ footer p {
 
 /*responsividade---------------------*/
 
-@media (max-width: 767px) {
-    
+@media (max-width: 360px) {
+/*
+    #linha1SectionId .col-md-6{
 
-    .ordem-texto {
-        order: 2;
     }
 
-    .ordem-imagem {
-        order: 1;
-    }
-
-    #linha1SectionId {
+    #lado1{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+    }
+
+    div#lado2{
+        margin-right: 0;
+    }
+
+    div#lado2 img{
+        width: 500px;
+    }
+    */
+}
+
+@media (max-width: 767px) {
+
+    #linha1SectionId{
+        flex-direction: column-reverse;
+        align-content: center;
     }
 
     div#lado2 {
