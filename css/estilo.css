@@ -25,6 +25,7 @@ body {
     background: var(--background);
     font-family: Bebas Neue, sans-serif;
     overflow: hidden;
+    overflow-y: hidden;
 }
 
 header {
